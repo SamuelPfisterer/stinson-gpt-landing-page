@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Impressum() {
   return (
     <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
@@ -61,15 +63,15 @@ export default function Impressum() {
             <h2 className="text-2xl font-semibold mb-4">Online-Streitbeilegung</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Die Europäische Kommission hat eine Europäische Plattform zur Online-Streitbeilegung („OS-Plattform") bereitzustellen. Die OS-Plattform ist im Internet unter der Internet-Adresse{" "}
-                <a
+                Die Europäische Kommission hat eine Europäische Plattform zur Online-Streitbeilegung (&ldquo;OS-Plattform&rdquo;) bereitzustellen. Die OS-Plattform ist im Internet unter der Internet-Adresse:{' '}
+                <Link
                   href="https://ec.europa.eu/consumers/odr/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"
                 >
                   https://ec.europa.eu/consumers/odr/
-                </a>
+                </Link>
                 {" "}abrufbar.
               </p>
               <p>
