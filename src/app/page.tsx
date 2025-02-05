@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from 'next/image';
+
 
 export default function Home() {
   return (
@@ -16,13 +18,23 @@ export default function Home() {
                 Optimize your dating profile photos with AI-powered analysis. Get detailed insights and recommendations to increase your matches.
               </p>
             </div>
-            <div className="space-x-4">
-              <Link href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-primary text-primary-foreground">
-                  Download on App Store
-                </Button>
+            <div className="flex justify-center items-center space-y-4 md:space-y-0">
+              <Link 
+                href="https://apps.apple.com/de/app/stinsongpt/id6740307390?l=en-GB" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <Image 
+                  src="/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                  alt="Download on the App Store"
+                  width={135}
+                  height={40}
+                  priority
+                />
               </Link>
             </div>
+
           </div>
         </div>
       </section>
