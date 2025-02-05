@@ -19,7 +19,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center space-y-4 md:space-y-0">
               <Link 
-                href="https://apps.apple.com/de/app/stinsongpt/id6740307390?l=en-GB" 
+                href="/app-store" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="transition-transform hover:scale-105"
