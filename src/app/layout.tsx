@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { MainNav } from "@/components/main-nav";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
+import { Analytics } from '@vercel/analytics/react';
 
 const geist = Geist({
   subsets: ["latin"],
@@ -59,6 +60,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );
